@@ -13,7 +13,7 @@ public class Main{
 		
 		//Instancia o analisador lexico
 		grmtLexer lexer = new grmtLexer (input);
-		System.out.println("Input Realizado: "+input);
+		System.out.println("Input: "+input);
 		
 		//Gerar os tokens
 		CommonTokenStream tokens = new CommonTokenStream(lexer);

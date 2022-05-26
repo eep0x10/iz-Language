@@ -13,7 +13,7 @@ whilethen:
 
 // For [for x > y && i=0 then x = 123]
 forthen:
-	'for' comp '&'(comp)* 'then' atrib;
+	'for' comp &\(comp)* 'then' atrib;
 
 //Comparacao
 comp:
