@@ -1,1 +1,1 @@
-for 1 > 2 & 3 > 4 & 5 > 6 then a = 123abc123
+if 1 > 2 then a1223123 = abcasfd2412421ioh421jn412b4jk12b4kj12421
