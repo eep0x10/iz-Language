@@ -2,16 +2,16 @@ https://mediacdns3.ulife.com.br/PAT/Upload/3130705/projeto_comp_quarta_202203161
 
 #  Requisitos
 
-[OK] Criar Gamatica [OK]
+[OK] Criar Gamatica [OK] (grmt.g4)
 
-[ ] Printar codigo convertido para Java [Pendente]
+[ ] Printar codigo convertido para Java [Pendente] (Tradutor.java)
 
-[ ] Salvar em um arquivo [Pendente] -> Main.java
+[ ] Salvar em um arquivo [Pendente] (Main.java)
 
-[ ] Compilar e executar codigo Java [Pendente] -> Main.java + os lib
+[ ] Compilar e executar codigo Java [Pendente] (Main.java + os lib)
 
 
-## Gramática
+## Gramática (grmt.g4)
 * 3 Tipos de Variaveis 
     * ID [OK]
     * Int [OK]
@@ -27,7 +27,7 @@ https://mediacdns3.ulife.com.br/PAT/Upload/3130705/projeto_comp_quarta_202203161
 * Operacoes Aritmetica [OK]
 * Operacoes Comparacao [OK]
 
-## Tradutor Java
+## Tradutor Java (Tradutor.java)
 
 * Converter Gramatica para Java
     * Variaveis [Pendente]    
