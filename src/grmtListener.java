@@ -17,6 +17,26 @@ public interface grmtListener extends ParseTreeListener {
 	 */
 	void exitInit(grmtParser.InitContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link grmtParser#print}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrint(grmtParser.PrintContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#print}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrint(grmtParser.PrintContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#input}.
+	 * @param ctx the parse tree
+	 */
+	void enterInput(grmtParser.InputContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#input}.
+	 * @param ctx the parse tree
+	 */
+	void exitInput(grmtParser.InputContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link grmtParser#ifthen}.
 	 * @param ctx the parse tree
 	 */
@@ -26,6 +46,16 @@ public interface grmtListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitIfthen(grmtParser.IfthenContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#else}.
+	 * @param ctx the parse tree
+	 */
+	void enterElse(grmtParser.ElseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#else}.
+	 * @param ctx the parse tree
+	 */
+	void exitElse(grmtParser.ElseContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link grmtParser#whilethen}.
 	 * @param ctx the parse tree
@@ -46,6 +76,46 @@ public interface grmtListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitForthen(grmtParser.ForthenContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#forcomp}.
+	 * @param ctx the parse tree
+	 */
+	void enterForcomp(grmtParser.ForcompContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#forcomp}.
+	 * @param ctx the parse tree
+	 */
+	void exitForcomp(grmtParser.ForcompContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#add_min}.
+	 * @param ctx the parse tree
+	 */
+	void enterAdd_min(grmtParser.Add_minContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#add_min}.
+	 * @param ctx the parse tree
+	 */
+	void exitAdd_min(grmtParser.Add_minContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#p_virg}.
+	 * @param ctx the parse tree
+	 */
+	void enterP_virg(grmtParser.P_virgContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#p_virg}.
+	 * @param ctx the parse tree
+	 */
+	void exitP_virg(grmtParser.P_virgContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#expressao}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpressao(grmtParser.ExpressaoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#expressao}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpressao(grmtParser.ExpressaoContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link grmtParser#comp}.
 	 * @param ctx the parse tree
@@ -96,6 +166,16 @@ public interface grmtListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAtrib(grmtParser.AtribContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link grmtParser#op_atrib}.
+	 * @param ctx the parse tree
+	 */
+	void enterOp_atrib(grmtParser.Op_atribContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link grmtParser#op_atrib}.
+	 * @param ctx the parse tree
+	 */
+	void exitOp_atrib(grmtParser.Op_atribContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link grmtParser#number}.
 	 * @param ctx the parse tree

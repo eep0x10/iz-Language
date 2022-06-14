@@ -27,6 +27,30 @@ public class grmtBaseListener implements grmtListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterPrint(grmtParser.PrintContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPrint(grmtParser.PrintContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInput(grmtParser.InputContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInput(grmtParser.InputContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterIfthen(grmtParser.IfthenContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -34,6 +58,18 @@ public class grmtBaseListener implements grmtListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitIfthen(grmtParser.IfthenContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterElse(grmtParser.ElseContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitElse(grmtParser.ElseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -58,6 +94,54 @@ public class grmtBaseListener implements grmtListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitForthen(grmtParser.ForthenContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterForcomp(grmtParser.ForcompContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitForcomp(grmtParser.ForcompContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAdd_min(grmtParser.Add_minContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAdd_min(grmtParser.Add_minContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterP_virg(grmtParser.P_virgContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitP_virg(grmtParser.P_virgContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExpressao(grmtParser.ExpressaoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExpressao(grmtParser.ExpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -118,6 +202,18 @@ public class grmtBaseListener implements grmtListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAtrib(grmtParser.AtribContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOp_atrib(grmtParser.Op_atribContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOp_atrib(grmtParser.Op_atribContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

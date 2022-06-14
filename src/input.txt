@@ -1,1 +1,1 @@
-if 1 > 2 then a1223123 = abcasfd2412421ioh421jn412b4jk12b4kj12421
+for i = 0 ; i < 10 ; i + + then print i

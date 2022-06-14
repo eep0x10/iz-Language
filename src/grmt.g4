@@ -1,45 +1,61 @@
 grammar grmt;
 
 init: 
-	ifthen | whilethen | forthen | atrib | calc | comp;
+	(ifthen | whilethen | forthen | atrib | calc | comp | print | else)*;
 
 //print + input
 print:
-	'print' var_types;
+	'print' id;
 input:
-	id '=' 'input';
+	'input';
 
 // IF [if x > y then x = 123]
 ifthen:
-	'if' comp 'then' expressao;
+	'if' comp expressao;
+
+//Else
+else:
+	'else' expressao;
 
 // While [while x > y == True then x = 123]
 whilethen:
-	'while' comp 'then' atrib;
+	'while' comp expressao;
 
 // For [for x > y && i=0 then x = 123]
 forthen:
-	'for' comp '&'(comp)* 'then' atrib;
+	'for' forcomp expressao;
+
+forcomp:
+	id op_atrib (var_types|calc|input) p_virg (number|id) op_comp (number|id) p_virg (id) add_min add_min;
+
+add_min:
+	'+' | '-';
+
+p_virg:
+	';';
 
 expressao: 
-	id atrib var_types;
+	'then' (print | atrib | ifthen | whilethen | forthen | calc | comp)*;
 
 //Comparacao
 comp:
-	number op_comp number;
+	(number|id) op_comp (number|id);
 // Operadores de Comparacao
 op_comp:
 	'>' | '<' | '<=' | '>=' | '==' | '!=';
 
 //Calculo
 calc:
-	number op_calc number;
+	(number|id) op_calc (number|id);
 // Operadores Matematicos
 op_calc:
 	'+' | '-' | '*' | '/';
 
-// Atribuicao Valor [x = 123]
 atrib:
+	id op_atrib (var_types|calc|input);
+
+// Atribuicao Valor [x = 123]
+op_atrib:
 	'=';
 
 number:
@@ -68,7 +84,6 @@ ID_EXPR:
 //String
 str:
 	ID_EXPR;
-
 //Integer
 num:
 	NUM_EXPR;
