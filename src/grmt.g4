@@ -5,7 +5,7 @@ init:
 
 // IF [if x > y then x = 123]
 ifthen:
-	'if' comp 'then' atrib;
+	'if' comp 'then' expressao;
 
 // While [while x > y == True then x = 123]
 whilethen:
@@ -14,6 +14,9 @@ whilethen:
 // For [for x > y && i=0 then x = 123]
 forthen:
 	'for' comp '&'(comp)* 'then' atrib;
+
+expressao: 
+	id atrib var_types;
 
 //Comparacao
 comp:
@@ -31,7 +34,7 @@ op_calc:
 
 // Atribuicao Valor [x = 123]
 atrib:
-	id '=' var_types;
+	'=';
 
 number:
 	num|flt;
