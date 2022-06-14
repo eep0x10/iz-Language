@@ -6,27 +6,27 @@ https://mediacdns3.ulife.com.br/PAT/Upload/3130705/projeto_comp_quarta_202203161
 
 - [x] Printar codigo convertido para Java (Tradutor.java)
 
-- [] Salvar em um arquivo (Main.java)
+- [ ] Salvar em um arquivo (Main.java)
 
-- [] Compilar e executar codigo Java (Main.java + os lib)
+- [ ] Compilar e executar codigo Java (Main.java + os lib)
 
 
 ## Gramática (grmt.g4)
 - [x] 3 Tipos de Variaveis 
-    * ID [OK]
-    * Int [OK]
-    * Float [OK]
-    * String [OK]
-    * Boolean [OK]
+    * ID 
+    * Int 
+    * Float 
+    * String 
+    * Boolean 
 - [x] Lógica
-    * If Else [OK] 
-    * While [OK] 
-    * For [OK]
+    * If Else 
+    * While 
+    * For 
 
 - [x] Operadores
-    * Atribuicao de Valor [OK]
-    * Operacoes Aritmetica [OK]
-    * Operacoes Comparacao [OK]
+    * Atribuicao de Valor 
+    * Operacoes Aritmetica 
+    * Operacoes Comparacao 
 
 - [x] In Out
     * Input
@@ -35,19 +35,18 @@ https://mediacdns3.ulife.com.br/PAT/Upload/3130705/projeto_comp_quarta_202203161
 ## Tradutor Java (Tradutor.java)
 
 - [x] Converter Gramatica para Java
-    * Variaveis [OK]    
-    * Atribuicao de valor [OK]
-    * Operacao Aritmetica [OK]
-    * Diferenciar ID de String [OK]
-    * Checar se ID ja foi declarado [OK]
-    * Operacao de Comparacao [OK]
-    * If Else [OK]
-    * While [OK]
-    * For [OK]
+    * Variaveis     
+    * Atribuicao de valor 
+    * Operacao Aritmetica
+    * Diferenciar ID de String
+    * Checar se ID ja foi declarado 
+    * Operacao de Comparacao 
+    * If Else 
+    * While 
+    * For 
+    * Input e Output (input + print) 
 
-* Input e Output (input + print) [OK]
-
-A parte de expressões envolvendo os operadores matemáticos deve ser realizada de maneira correta, respeitando a precedência. Não é necessário gerar a resposta da expressão, basta cuidar da precedência entre os operadores matemáticos através da gramática [OK]
+> A parte de expressões envolvendo os operadores matemáticos deve ser realizada de maneira correta, respeitando a precedência. Não é necessário gerar a resposta da expressão, basta cuidar da precedência entre os operadores matemáticos através da gramática
 
 
 # Comandos:
