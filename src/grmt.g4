@@ -3,6 +3,12 @@ grammar grmt;
 init: 
 	ifthen | whilethen | forthen | atrib | calc | comp;
 
+//print + input
+print:
+	'print' var_types;
+input:
+	id '=' 'input';
+
 // IF [if x > y then x = 123]
 ifthen:
 	'if' comp 'then' expressao;

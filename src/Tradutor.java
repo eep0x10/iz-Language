@@ -3,7 +3,9 @@ public class Tradutor extends grmtBaseListener{
 	@Override
 	public void enterInit(grmtParser.InitContext ctx){
 		System.out.println("public class Code (");
+		System.out.println("import java.util.Scanner;");
 		System.out.println("public static void main(String[] arg){");
+		System.out.println("Scanner myObj = new Scanner(System.in);");
 			
 	}
 	@Override
@@ -12,6 +14,18 @@ public class Tradutor extends grmtBaseListener{
 		System.out.println("}");
 
 }
+	@Override public void enterPrint(grmtParser.PrintContext ctx){
+		System.out.println("System.out.println(");
+	}
+	@Override public void exitPrint(grmtParser.PrintContext ctx){
+		System.out.println(");");
+	}
+	@Override public void enterInput(grmtParser.InputContext ctx){
+		System.out.println(" myObj.nextLine();");
+	}
+	//@Override public void exitInput(grmtParser.InputContext ctx){
+	//	
+	//}
 	// IF, While, For
 	// if ... }
 	@Override public void enterIfthen(grmtParser.IfthenContext ctx) { 
