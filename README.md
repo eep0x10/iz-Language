@@ -69,7 +69,7 @@ teste = abc teste2 = 123 teste3 = dfg teste4 = 1+2 teste5 = true teste6=teste te
 
 var1 = 2 var2 = 3 var3 = var1+var2 print var3
 
-teste = input print 
+teste = input print teste 
 
 variavel=0 if 1 > 2 then variavel = 1 print variavel else then variavel=2 print variavel
 
