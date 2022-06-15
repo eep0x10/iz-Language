@@ -6,9 +6,9 @@ https://mediacdns3.ulife.com.br/PAT/Upload/3130705/projeto_comp_quarta_202203161
 
 - [x] Printar codigo convertido para Java (Tradutor.java)
 
-- [ ] Salvar em um arquivo (Main.java)
+- [x] Salvar em um arquivo (Main.java)
 
-- [ ] Compilar e executar codigo Java (Main.java + os lib)
+- [x] Compilar e executar codigo Java (Main.java + os lib)
 
 
 ## Gramática (grmt.g4)
